@@ -38,8 +38,7 @@ namespace DesafioProjetoHospedagem.Models
         {
             // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
             // Se a lista de hóspedes for nula, retorna 0
-            return Hospedes.Count;
-            //return Hospedes?.Count ?? 0;
+            return Hospedes?.Count ?? 0;
 
         }
 
@@ -51,7 +50,6 @@ namespace DesafioProjetoHospedagem.Models
 
 
             // Regra: Caso os dias reservados forem maior ou igual a 10, conceder um desconto de 10%
-            // *IMPLEMENTE AQUI*
             if (DiasReservados >= 10)
             {
                 valor -= valor * 0.1m; // Aplicando 10% de desconto
