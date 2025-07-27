@@ -16,15 +16,6 @@ namespace DesafioProjetoHospedagem.Models
         public void CadastrarHospedes(List<Pessoa> hospedes)
         {
             // TODO: Verificar se a capacidade é maior ou igual ao número de hóspedes sendo recebido
-          /*  if (hospedes == null || hospedes.Count == 0)
-            {
-                throw new ArgumentException("A lista de hóspedes não pode ser nula ou vazia.");
-            }
-            if (Suite == null)
-            {
-                throw new InvalidOperationException("A suíte deve ser cadastrada antes de cadastrar os hóspedes.");
-            }
-            */
             if (Suite.Capacidade >= hospedes.Count)
             {
                 // Atribui a lista de hóspedes à propriedade Hospedes   
